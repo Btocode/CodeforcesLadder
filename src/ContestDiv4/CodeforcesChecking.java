@@ -6,17 +6,16 @@ public class CodeforcesChecking {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        String codeforces = "codeforces";
+        String word = "codeforces";
 
-        for (int i = 0; i < t; i++) {
+        while (t-- > 0) {
             String c = sc.next();
-            if (codeforces.contains(c)) {
-                System.out.println("YES");
+            if (word.contains(c)) {
+                System.out.println("yes");
             } else {
-                System.out.println("NO");
+                System.out.println("no");
             }
         }
-        sc.close();
     }
 }
 
